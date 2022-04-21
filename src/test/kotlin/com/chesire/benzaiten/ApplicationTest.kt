@@ -1,6 +1,6 @@
-package com.example
+package com.chesire.benzaiten
 
-import com.example.plugins.configureRouting
+import com.chesire.benzaiten.plugins.configureRouting
 import io.ktor.http.HttpMethod
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.testing.handleRequest

@@ -11,7 +11,7 @@ plugins {
     alias(libs.plugins.shadow)
 }
 
-group = "com.example"
+group = "com.chesire.benzaiten"
 version = "0.0.1"
 application {
     mainClass.set("io.ktor.server.netty.EngineMain")

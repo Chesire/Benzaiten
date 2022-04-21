@@ -1,4 +1,4 @@
-package com.example.plugins.koin.modules
+package com.chesire.benzaiten.plugins.koin.modules
 
 import org.koin.core.module.Module
 

@@ -1,4 +1,4 @@
-package com.example.plugins
+package com.chesire.benzaiten.plugins
 
 import io.ktor.server.application.Application
 import io.ktor.server.application.call

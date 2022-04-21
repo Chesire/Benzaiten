@@ -1,9 +1,9 @@
-package com.example
+package com.chesire.benzaiten
 
-import com.example.plugins.configureRouting
-import com.example.plugins.configureSerialization
-import com.example.plugins.configureStatusPages
-import com.example.plugins.koin.configureKoin
+import com.chesire.benzaiten.plugins.configureRouting
+import com.chesire.benzaiten.plugins.configureSerialization
+import com.chesire.benzaiten.plugins.configureStatusPages
+import com.chesire.benzaiten.plugins.koin.configureKoin
 import io.ktor.server.application.Application
 
 /**
