@@ -13,9 +13,9 @@ class ApplicationTest {
     @Test
     fun `verify starts`() {
         withTestApplication({ configureRouting() }) {
-            handleRequest(HttpMethod.Get, "/").apply {
+            handleRequest(HttpMethod.Get, "/status/").apply {
                 assertEquals(HttpStatusCode.OK, response.status())
-                assertEquals("Hello World!", response.content)
+                assertEquals("Benzaiten status OK!", response.content)
             }
         }
     }
