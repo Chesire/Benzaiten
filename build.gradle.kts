@@ -25,8 +25,11 @@ repositories {
 dependencies {
     implementation(libs.logback)
     implementation(libs.koin.ktor)
+    implementation(libs.kotlin.result)
     implementation(libs.ktor.client.cio)
     implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.logging)
+    implementation(libs.ktor.client.serialization)
     implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.server.core)
