@@ -1,7 +1,6 @@
 package com.chesire.benzaiten.routing.profile
 
 import com.chesire.benzaiten.Const.SPOTIFY_TOKEN
-import com.chesire.benzaiten.plugins.koin.inject
 import com.chesire.benzaiten.routing.ErrorDomain
 import com.chesire.benzaiten.routing.profile.service.ProfileService
 import com.github.michaelbull.result.onFailure
@@ -11,6 +10,7 @@ import io.ktor.server.response.respond
 import io.ktor.server.response.respondText
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.get
+import org.koin.ktor.ext.inject
 
 /**
  * Route to access details about a users profile.
