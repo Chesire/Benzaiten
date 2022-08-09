@@ -40,7 +40,8 @@ dependencies {
     testImplementation(libs.koin.test)
     testImplementation(libs.koin.test.junit4)
     testImplementation(libs.kotlin.test.junit)
-    testImplementation(libs.ktor.server.tests)
+    testImplementation(libs.ktor.client.mock)
+    testImplementation(libs.ktor.server.test.host)
 }
 
 tasks {
