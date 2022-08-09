@@ -8,7 +8,6 @@ import com.github.michaelbull.result.onFailure
 import com.github.michaelbull.result.onSuccess
 import io.ktor.server.application.call
 import io.ktor.server.response.respond
-import io.ktor.server.response.respondText
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.get
 import org.koin.ktor.ext.inject
@@ -30,7 +29,7 @@ fun Route.profile() {
         }
 
         service.retrieveUserProfile(token)
-            .onSuccess { call.respondText { it.toString() } }
+            .onSuccess { call.respond(it) }
             .onFailure {
                 call.respond(
                     ErrorDomain(
