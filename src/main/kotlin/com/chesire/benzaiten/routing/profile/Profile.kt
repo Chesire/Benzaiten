@@ -2,6 +2,7 @@ package com.chesire.benzaiten.routing.profile
 
 import com.chesire.benzaiten.ext.spotifyToken
 import com.chesire.benzaiten.routing.ErrorDomain
+import com.chesire.benzaiten.routing.common.noTokenError
 import com.chesire.benzaiten.routing.profile.service.ProfileService
 import com.github.michaelbull.result.onFailure
 import com.github.michaelbull.result.onSuccess
@@ -24,12 +25,7 @@ fun Route.profile() {
     get("profile/") {
         val token = call.request.spotifyToken
         if (token == null) {
-            call.respond(
-                ErrorDomain(
-                    "No spotify token",
-                    "Please provide a spotify token in the headers."
-                )
-            )
+            call.respond(noTokenError)
             return@get
         }
 
