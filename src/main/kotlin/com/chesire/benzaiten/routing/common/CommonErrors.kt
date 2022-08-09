@@ -7,5 +7,5 @@ import com.chesire.benzaiten.routing.ErrorDomain
  */
 val noTokenError = ErrorDomain(
     "No spotify token",
-    "Please provide a spotify token in the headers."
+    "Please provide the spotify-token header."
 )

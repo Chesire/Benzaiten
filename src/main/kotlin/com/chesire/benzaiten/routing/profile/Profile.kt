@@ -6,6 +6,7 @@ import com.chesire.benzaiten.routing.common.noTokenError
 import com.chesire.benzaiten.routing.profile.service.ProfileService
 import com.github.michaelbull.result.onFailure
 import com.github.michaelbull.result.onSuccess
+import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.call
 import io.ktor.server.response.respond
 import io.ktor.server.routing.Route
@@ -24,6 +25,7 @@ fun Route.profile() {
     get("profile/") {
         val token = call.request.spotifyToken
         if (token == null) {
+            call.response.status(HttpStatusCode.Unauthorized)
             call.respond(noTokenError)
             return@get
         }

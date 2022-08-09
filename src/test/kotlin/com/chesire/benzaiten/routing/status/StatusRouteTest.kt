@@ -1,4 +1,4 @@
-package com.chesire.benzaiten
+package com.chesire.benzaiten.routing.status
 
 import com.chesire.benzaiten.routing.configureRouting
 import io.ktor.client.request.get
@@ -8,10 +8,10 @@ import io.ktor.server.testing.testApplication
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class ApplicationTest {
+class StatusRouteTest {
 
     @Test
-    fun `verify starts`() = testApplication {
+    fun `Verify status endpoint returns OK`() = testApplication {
         application { configureRouting() }
 
         val response = client.get("/status/")
