@@ -59,7 +59,7 @@ tasks {
         exclude("**/build/**")
     }
 
-    create("stage").dependsOn("installShadowDist")
+    create("stage").dependsOn("installDist")
 }
 
 configure<KtlintExtension> {

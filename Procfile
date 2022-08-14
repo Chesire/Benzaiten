@@ -1,1 +1,1 @@
-web: ./build/install/benzaiten/bin/benzaiten
+web: ./build/install/com.chesire.benzaiten/bin/com.chesire.benzaiten
