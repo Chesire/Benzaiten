@@ -14,7 +14,9 @@ private const val PROFILE_URL = "https://api.spotify.com/v1/me"
 
 class ProfileService(private val httpClient: HttpClient) {
 
-    suspend fun retrieveUserProfile(bearerToken: String): Result<SpotifyProfileDto, SpotifyErrorDto> {
+    suspend fun retrieveUserProfile(
+        bearerToken: String
+    ): Result<SpotifyProfileDto, SpotifyErrorDto> {
         return httpClient
             .get(PROFILE_URL) {
                 accept(ContentType.Application.Json)

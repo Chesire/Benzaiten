@@ -1,6 +1,7 @@
 package com.chesire.benzaiten.routing.profile.service
 
 import com.chesire.benzaiten.routing.SpotifyErrorDto
+import com.chesire.benzaiten.routing.SpotifyErrorDtoDetails
 import com.chesire.benzaiten.routing.profile.data.ExplicitContent
 import com.chesire.benzaiten.routing.profile.data.ExternalUrls
 import com.chesire.benzaiten.routing.profile.data.Followers
@@ -70,8 +71,10 @@ class ProfileServiceTest {
     @Test
     fun `failure call to profile, returns Err with error domain`() = runBlocking {
         val expected = SpotifyErrorDto(
-            status = 100,
-            message = "message"
+            SpotifyErrorDtoDetails(
+                status = 100,
+                message = "message"
+            )
         )
         val mockEngine = MockEngine { _ ->
             respond(

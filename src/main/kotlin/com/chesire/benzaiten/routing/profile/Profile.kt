@@ -33,6 +33,7 @@ fun Route.profile() {
         service.retrieveUserProfile(token)
             .onSuccess { call.respond(it) }
             .onFailure {
+                call.response.status(HttpStatusCode.fromValue(it.details.status))
                 call.respond(
                     ErrorDomain(
                         it.details.status.toString(),
