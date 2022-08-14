@@ -27,9 +27,9 @@ import kotlin.test.assertEquals
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
 import org.koin.dsl.module
-import org.koin.test.KoinTest
+import org.koin.test.AutoCloseKoinTest
 
-class ProfileRouteTest : KoinTest {
+class ProfileRouteTest : AutoCloseKoinTest() {
 
     @Test
     fun `Verify missing token responds with error`() = testApplication {
