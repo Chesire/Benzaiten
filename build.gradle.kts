@@ -1,4 +1,5 @@
 import io.gitlab.arturbosch.detekt.Detekt
+import org.jlleitschuh.gradle.ktlint.KtlintExtension
 
 @Suppress("DSL_SCOPE_VIOLATION", "UnstableApiUsage")
 plugins {
@@ -56,4 +57,8 @@ tasks {
         exclude("**/resources/**")
         exclude("**/build/**")
     }
+}
+
+configure<KtlintExtension> {
+    disabledRules.set(setOf("import-ordering"))
 }
