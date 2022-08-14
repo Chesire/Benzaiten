@@ -1,4 +1,5 @@
 import io.gitlab.arturbosch.detekt.Detekt
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jlleitschuh.gradle.ktlint.KtlintExtension
 
 @Suppress("DSL_SCOPE_VIOLATION", "UnstableApiUsage")
@@ -63,4 +64,8 @@ tasks {
 
 configure<KtlintExtension> {
     disabledRules.set(setOf("import-ordering"))
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = JavaVersion.VERSION_11.toString()
 }
