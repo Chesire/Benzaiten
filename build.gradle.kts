@@ -57,6 +57,8 @@ tasks {
         exclude("**/resources/**")
         exclude("**/build/**")
     }
+
+    create("stage").dependsOn("installDist")
 }
 
 configure<KtlintExtension> {
