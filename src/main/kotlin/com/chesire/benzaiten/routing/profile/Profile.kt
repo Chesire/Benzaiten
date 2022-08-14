@@ -35,8 +35,8 @@ fun Route.profile() {
             .onFailure {
                 call.respond(
                     ErrorDomain(
-                        it.status.toString(),
-                        it.message
+                        it.details.status.toString(),
+                        it.details.message
                     )
                 )
             }
