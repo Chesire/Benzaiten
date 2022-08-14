@@ -1,4 +1,5 @@
 import io.gitlab.arturbosch.detekt.Detekt
+import org.jlleitschuh.gradle.ktlint.KtlintExtension
 
 @Suppress("DSL_SCOPE_VIOLATION", "UnstableApiUsage")
 plugins {
@@ -25,8 +26,12 @@ repositories {
 dependencies {
     implementation(libs.logback)
     implementation(libs.koin.ktor)
+    implementation(libs.kotlin.result)
     implementation(libs.ktor.client.cio)
+    implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.logging)
+    implementation(libs.ktor.client.serialization)
     implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.ktor.server.content.negotiation)
     implementation(libs.ktor.server.core)
@@ -37,7 +42,8 @@ dependencies {
     testImplementation(libs.koin.test)
     testImplementation(libs.koin.test.junit4)
     testImplementation(libs.kotlin.test.junit)
-    testImplementation(libs.ktor.server.tests)
+    testImplementation(libs.ktor.client.mock)
+    testImplementation(libs.ktor.server.test.host)
 }
 
 tasks {
@@ -51,4 +57,8 @@ tasks {
         exclude("**/resources/**")
         exclude("**/build/**")
     }
+}
+
+configure<KtlintExtension> {
+    disabledRules.set(setOf("import-ordering"))
 }
