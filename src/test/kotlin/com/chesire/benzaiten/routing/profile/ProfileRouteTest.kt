@@ -1,16 +1,16 @@
 package com.chesire.benzaiten.routing.profile
 
 import com.chesire.benzaiten.routing.ErrorDomain
-import com.chesire.benzaiten.routing.SpotifyErrorDto
-import com.chesire.benzaiten.routing.SpotifyErrorDtoDetails
-import com.chesire.benzaiten.routing.profile.data.ExplicitContent
-import com.chesire.benzaiten.routing.profile.data.ExternalUrls
-import com.chesire.benzaiten.routing.profile.data.Followers
-import com.chesire.benzaiten.routing.profile.data.Image
-import com.chesire.benzaiten.routing.profile.data.SpotifyProfileDto
 import com.chesire.benzaiten.routing.util.createTestClient
 import com.chesire.benzaiten.routing.util.installTestPlugins
 import com.chesire.benzaiten.routing.util.primeTestEnvironment
+import com.chesire.benzaiten.service.SpotifyErrorDto
+import com.chesire.benzaiten.service.SpotifyErrorDtoDetails
+import com.chesire.benzaiten.service.profile.ExplicitContent
+import com.chesire.benzaiten.service.profile.ExternalUrls
+import com.chesire.benzaiten.service.profile.Followers
+import com.chesire.benzaiten.service.profile.Image
+import com.chesire.benzaiten.service.profile.SpotifyProfileDto
 import io.ktor.client.request.accept
 import io.ktor.client.request.get
 import io.ktor.client.request.headers

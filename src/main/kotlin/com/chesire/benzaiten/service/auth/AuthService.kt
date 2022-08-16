@@ -1,4 +1,4 @@
-package com.chesire.benzaiten.routing.auth.service
+package com.chesire.benzaiten.service.auth
 
 import com.chesire.benzaiten.Const
 import io.ktor.client.HttpClient

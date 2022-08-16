@@ -1,6 +1,4 @@
-package com.chesire.benzaiten.routing.common
-
-import com.chesire.benzaiten.routing.ErrorDomain
+package com.chesire.benzaiten.routing
 
 /**
  * Provides an [ErrorDomain] for if the spotify token is invalid.
