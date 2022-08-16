@@ -6,4 +6,5 @@ object Const {
     const val SCOPE = "user-read-private user-read-email"
 
     const val SPOTIFY_TOKEN = "spotify-token"
+    const val SPOTIFY_BASE_URL = "https://api.spotify.com/v1"
 }
