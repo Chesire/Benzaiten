@@ -1,4 +1,4 @@
-package com.chesire.benzaiten.routing
+package com.chesire.benzaiten.service
 
 import kotlinx.serialization.SerialName
 

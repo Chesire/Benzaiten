@@ -1,12 +1,7 @@
-package com.chesire.benzaiten.routing.profile.service
+package com.chesire.benzaiten.service.profile
 
-import com.chesire.benzaiten.routing.SpotifyErrorDto
-import com.chesire.benzaiten.routing.SpotifyErrorDtoDetails
-import com.chesire.benzaiten.routing.profile.data.ExplicitContent
-import com.chesire.benzaiten.routing.profile.data.ExternalUrls
-import com.chesire.benzaiten.routing.profile.data.Followers
-import com.chesire.benzaiten.routing.profile.data.Image
-import com.chesire.benzaiten.routing.profile.data.SpotifyProfileDto
+import com.chesire.benzaiten.service.SpotifyErrorDto
+import com.chesire.benzaiten.service.SpotifyErrorDtoDetails
 import com.github.michaelbull.result.Err
 import com.github.michaelbull.result.Ok
 import io.ktor.client.HttpClient

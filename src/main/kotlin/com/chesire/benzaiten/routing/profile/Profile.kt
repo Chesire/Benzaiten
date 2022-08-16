@@ -2,8 +2,8 @@ package com.chesire.benzaiten.routing.profile
 
 import com.chesire.benzaiten.ext.spotifyToken
 import com.chesire.benzaiten.routing.ErrorDomain
-import com.chesire.benzaiten.routing.common.noTokenError
-import com.chesire.benzaiten.routing.profile.service.ProfileService
+import com.chesire.benzaiten.routing.noTokenError
+import com.chesire.benzaiten.service.profile.ProfileService
 import com.github.michaelbull.result.onFailure
 import com.github.michaelbull.result.onSuccess
 import io.ktor.http.HttpStatusCode
