@@ -1,5 +1,7 @@
 package com.chesire.benzaiten.service.profile
 
+import com.chesire.benzaiten.service.ExternalUrls
+import com.chesire.benzaiten.service.Image
 import kotlinx.serialization.SerialName
 
 @kotlinx.serialization.Serializable
@@ -39,25 +41,9 @@ data class ExplicitContent(
 )
 
 @kotlinx.serialization.Serializable
-data class ExternalUrls(
-    @SerialName("spotify")
-    val spotify: String
-)
-
-@kotlinx.serialization.Serializable
 data class Followers(
     @SerialName("href")
     val href: String?,
     @SerialName("total")
     val total: Int
-)
-
-@kotlinx.serialization.Serializable
-data class Image(
-    @SerialName("height")
-    val height: Int?,
-    @SerialName("url")
-    val url: String,
-    @SerialName("width")
-    val width: Int?
 )

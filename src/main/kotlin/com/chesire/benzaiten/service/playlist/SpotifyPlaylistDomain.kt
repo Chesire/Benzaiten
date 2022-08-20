@@ -1,7 +1,7 @@
 package com.chesire.benzaiten.service.playlist
 
-import com.chesire.benzaiten.service.profile.ExternalUrls
-import com.chesire.benzaiten.service.profile.Image
+import com.chesire.benzaiten.service.ExternalUrls
+import com.chesire.benzaiten.service.Image
 import kotlinx.serialization.SerialName
 
 @kotlinx.serialization.Serializable
@@ -29,13 +29,13 @@ data class SpotifyPlaylistDetails(
     @SerialName("description")
     val description: String,
     @SerialName("externalUrls")
-    val externalUrls: ExternalUrls, // TODO: Make this generic
+    val externalUrls: ExternalUrls,
     @SerialName("href")
     val href: String,
     @SerialName("id")
     val id: String,
     @SerialName("images")
-    val images: List<Image>, // TODO: Make this generic
+    val images: List<Image>,
     @SerialName("name")
     val name: String,
     @SerialName("owner")
