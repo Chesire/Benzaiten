@@ -1,6 +1,6 @@
 [versions]
 koin = "3.2.0"
-kotlin = "1.7.10"
+kotlin = "1.7.20"
 ktor = "2.1.0"
 
 [libraries]
