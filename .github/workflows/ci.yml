@@ -24,7 +24,7 @@ jobs:
         run: ./gradlew test
       - name: run koverReport
         run: ./gradlew koverReport
-      - uses: codecov/codecov-action@v3.1.0
+      - uses: codecov/codecov-action@v3.1.6
 
   ktlint:
     runs-on: ubuntu-latest
