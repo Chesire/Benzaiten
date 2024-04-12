@@ -1,5 +1,5 @@
 [versions]
-koin = "3.2.0"
+koin = "3.5.6"
 kotlin = "1.7.10"
 ktor = "2.1.0"
 
